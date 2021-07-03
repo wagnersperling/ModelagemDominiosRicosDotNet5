@@ -7,7 +7,6 @@ namespace PaymentContext.Domain.Entities
     {
         public PayPalPayment(
             string transactionCode,
-            string number,
             DateTime paidDate,
             DateTime expireDate,
             decimal total,
