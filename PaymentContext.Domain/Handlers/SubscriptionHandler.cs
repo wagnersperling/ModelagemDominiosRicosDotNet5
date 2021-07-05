@@ -25,7 +25,7 @@ namespace PaymentContext.Domain.Handlers
             _emailService = emailService;
         }
 
-        public ICommandResult Handler(CreateBoletoSubscriptionCommand command)
+        public ICommandResult Handle(CreateBoletoSubscriptionCommand command)
         {
             command.Validate();
             if (command.Invalid)
@@ -81,7 +81,7 @@ namespace PaymentContext.Domain.Handlers
             return new CommandResult(true, "Assinatura realizada com sucesso");
         }
 
-        public ICommandResult Handler(CreatePayPalSubscriptionCommand command)
+        public ICommandResult Handle(CreatePayPalSubscriptionCommand command)
         {
             if (_studentRepository.DocumentExists(command.Document))
             {
