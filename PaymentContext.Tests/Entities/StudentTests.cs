@@ -13,8 +13,6 @@ namespace PaymentContext.Tests.Entities
         private readonly Document _document;
         private readonly Address _address;
         private readonly Student _student;
-        private readonly Subscription _subscription;
-
         public StudentTests()
         {
             _name = new Name("Carlos", "Sperling");
